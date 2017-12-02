@@ -19,7 +19,9 @@
     "resizable",
     "textarea",
     "resize textarea",
-    "resizable textarea"
+    "resizable textarea",
+    "fluid textarea",
+    "fluid"
   ],
   "bugs": {
     "url": "https://github.com/MartinDawson/react-fluid-textarea/issues"
