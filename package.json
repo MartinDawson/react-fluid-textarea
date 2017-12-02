@@ -1,0 +1,38 @@
+{
+  "name": "react-resizable-textarea",
+  "version": "0.0.1",
+  "description": "Automatically resizes your text area to the amount you type.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ --out-dir lib",
+    "version": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinDawson/react-resizable-textarea.git"
+  },
+  "author": "Martin Dawson",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "resizable",
+    "textarea",
+    "resize textarea",
+    "resizable textarea"
+  ],
+  "bugs": {
+    "url": "https://github.com/MartinDawson/react-resizable-textarea/issues"
+  },
+  "homepage": "https://github.com/MartinDawson/react-resizable-textarea#readme",
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
