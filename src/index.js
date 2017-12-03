@@ -7,10 +7,12 @@ class ResizableTextArea extends React.Component {
 
     this.state = {};
   }
+  componentDidMount() {
+    this.setState({ height: this.textarea.scrollHeight });
+  }
   onInput = (...args) => {
-    this.setState({ scrollHeight: 0 }, () => {
-      this.setState({ scrollHeight: this.textarea.scrollHeight });
-    });
+    this.textarea.style.height = 'auto';
+    this.setState({ height: this.textarea.scrollHeight });
 
     this.props.onInput(...args);
   }
@@ -23,7 +25,7 @@ class ResizableTextArea extends React.Component {
     const style = {
       ...this.props.style,
       lineHeight: '1.5em',
-      height: this.state.scrollHeight,
+      height: this.state.height,
       overflowY: 'hidden',
     };
 
@@ -41,9 +43,11 @@ class ResizableTextArea extends React.Component {
 ResizableTextArea.defaultProps = {
   ref: Function.prototype,
   onInput: Function.prototype,
+  style: null,
 };
 
 ResizableTextArea.propTypes = {
+  style: PropTypes.object,
   ref: PropTypes.func,
   onInput: PropTypes.func,
 };
