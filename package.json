@@ -1,6 +1,6 @@
 {
   "name": "react-fluid-textarea",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Automatically resizes your text area to the amount you type.",
   "main": "./lib/index.js",
   "scripts": {
